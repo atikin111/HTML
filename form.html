@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Tables</title>
+</head>
+<body>
+    <form action="/submit" method="get">
+        <div class="info_player">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" required placeholder="Введите имя" name="name">
+            <label for="surname">Фамилия:</label>
+            <input type="text" id="surname" placeholder="Введите фамилию" name="surname" required>
+            <label for="age">Возраст:</label>
+            <input type="number" name="age" id="age" placeholder="Введите возраст" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Введите email" required>
+        </div>
+        <div class="mission">
+            <label for="mission">Выбор типа миссии:</label>
+            <input type="radio" id="researcher" name="mission" required> Исследователь
+            <input type="radio" id="engineer" name="mission" required> Инженер
+            <input type="radio" id="doctor" name="mission" required> Врач
+        </div>
+        <div class="skills">
+            <label for="skills">Имеющиеся навыки:</label>
+            <input type="checkbox" name="skills" id="programming"> Программирование
+            <input type="checkbox" name="skills" id="medicine"> Медицина
+            <input type="checkbox" name="skills" id="construction"> Строительство
+        </div>
+        <div class="description">
+            <label for="description">Краткое описание, почему ты хочешь полтеть на Марс:</label>
+            <input type="text" name="description" id="description" maxlength="200" placeholder="Напиши о том, почему ты хочешь полететь на Марс">
+        </div>
+        <div class="photo">
+            <label for="photo">Добавить фотографию:</label>
+            <input type="file" name="photo" id="photo" accept="image/*">
+        </div>
+        <div class="agree">
+            <label for="agree">Согласие с условиями миссии:</label>
+            <input type="checkbox" name="agree" id="agree" required> Я согласен
+        </div>
+        <div class="button">
+            <label for="button">
+                <button type="submit">Отправить заявку</button>
+            </label>
+            </div>
+    </form>
+</body>
+</html>
